@@ -1,0 +1,2 @@
+# Cotra-Selfbot
+Discord Selfbot
