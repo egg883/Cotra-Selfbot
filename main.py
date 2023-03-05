@@ -205,7 +205,7 @@ ritchy_pres = config['rpc']
 if ritchy_pres == True:
     rpc = Presence("926564240259711107")
     rpc.connect()
-    rpc.update(state="Using Cotra Selfbot",large_image="uwu",start=time.time(),large_text=f"Logged in as : GET FUCKING LEAKED YOU CUNT",buttons=[{"label": "Discord", "url": "https://discord.gg/6EzTsPnbbA"}],small_image="uwu",small_text=f"Version : [{version}]")
+    rpc.update(state="Using Cotra Selfbot",large_image="uwu",start=time.time(),large_text=f"Logged in as : Cool person",buttons=[{"label": "Discord", "url": "https://discord.gg/6EzTsPnbbA"}],small_image="uwu",small_text=f"Version : [{version}]")
 
 
 def color_fade(fade_ticks, *colors: list, repeat=False):
@@ -1354,49 +1354,6 @@ async def massgc(ctx,userid1,times):
 
         response = requests.delete(f'https://discord.com/api/v9/channels/{str(createdserver["id"])}', headers=headers)
        # print(response.text)
-
-# (pass_context)= True
-# async def rainbowrole(ctx,*,rolename):
-#     if not is_me(ctx.message): #i like lines
-#         return
-#     await ctx.message.delete()
-#     print("<>rainbowrole<>")
-    
-#     role = discord.utils.get(ctx.message.guild.roles,name=rolename)
-#     colors = ["16711685","15105570","16771840","2067276","3447003","10181046","15277667"]
-#     num1 = 0
-#     while True:
-
-
-#         headers = {
-#             'authority': 'discord.com',
-#             'x-super-properties': 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRGlzY29yZCBDbGllbnQiLCJyZWxlYXNlX2NoYW5uZWwiOiJzdGFibGUiLCJjbGllbnRfdmVyc2lvbiI6IjEuMC45MDAzIiwib3NfdmVyc2lvbiI6IjEwLjAuMjIwMDAiLCJvc19hcmNoIjoieDY0Iiwic3lzdGVtX2xvY2FsZSI6ImVuLUdCIiwiY2xpZW50X2J1aWxkX251bWJlciI6MTA0Mjc2LCJjbGllbnRfZXZlbnRfc291cmNlIjpudWxsfQ==',
-#             'authorization': config['token'],
-#             'x-debug-options': 'bugReporterEnabled',
-#             'accept-language': 'en-US',
-#             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.9003 Chrome/91.0.4472.164 Electron/13.4.0 Safari/537.36',
-#             'content-type': 'application/json',
-#             'accept': '*/*',
-#             'origin': 'https://discord.com',
-#             'sec-fetch-site': 'same-origin',
-#             'sec-fetch-mode': 'cors',
-#             'sec-fetch-dest': 'empty',
-#             'referer': 'https://discord.com/channels/889840534754054145/907218560248610836',
-#             'cookie': '__dcfduid=0f52e1903dce11eca260a166ca1ce2a2; __sdcfduid=0f52e1913dce11eca260a166ca1ce2a26685cf1817e5918f525ccb544c7b38dd469403cf86d6082435cd8cbb46d620ef; __stripe_mid=b0aea78a-f66f-4067-b204-0a7ee4db6acaf58e16',
-#         }
-
-#         data = '{"name":"'+rolename+'","permissions":"1071728021057","color":'+str(random.choice(colors))+',"hoist":false,"mentionable":false,"icon":null,"unicode_emoji":null}'
-
-#         response = requests.patch(f'https://discord.com/api/v9/guilds/{str(ctx.message.guild.id)}/roles/{str(role.id)}', headers=headers, data=data)
-#         await asyncio.sleep(1.5)
-#         #if num1 + 1000 > 16777215:
-#             #num1 = 0
-#         #num1 += 1000
-#         #print(response.text)
-#         if "retry_after" in response.text:
-#             kk=response.json()
-#             print(f"hit retry limit waiting {str(kk['retry_after'])} second(s)")
-#             await asyncio.sleep(int(kk["retry_after"]))
 
 @bot.command()
 async def mysite(ctx,):
@@ -2774,18 +2731,6 @@ cum cum :3
     await ctx.send(res['url'],delete_after=config['deletetime'])
     print(Colours.Magenta+"[Command] <>lewdneko<>"+Colours.White)
 
-
-
-# @bot.command()
-# async def hideinvite(ctx, url, *, message: str='Hi'):
-#         await ctx.message.delete()
-#         await ctx.send(f'‎{message}||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||‎‎||‎||‎‎||‎‎||‎‎||‎‎||{url}')
-
-# @bot.command()
-# async def hidelink(ctx, url, spoofed_url):
-#     await ctx.message.delete()
-#     await ctx.send(f'‎<{spoofed_url}>||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||‎‎||‎||‎‎||‎‎||‎‎||‎‎||{url}')
-
 @bot.command()
 async def kiss(ctx, member=None):
     await ctx.message.delete()
@@ -3320,57 +3265,8 @@ The User {member.display_name} is {random.randint(0,100)}% cute
     """
 
     await ctx.send(msg,delete_after=config['deletetime'])
-
-
-# @tasks.loop(seconds=15)
-# async def clock(text):
-#     hour = datetime.datetime.now().strftime("%H")
-#     hour = int(hour)
-#     minute = datetime.datetime.now().strftime("%M")
-#     minute = int(minute)
-#     if hour >= 12:
-#         time = f"{hour-12}:{minute}PM"
-#     else:
-#         time = f"{hour}:{minute}AM"
-#     data = {"custom_status": {"text": f"{time} {text}", "emoji_name": "🕰️"}}
-#     url = "https://discordapp.com/api/v9/users/@me/settings"
-
-#     headers = CaseInsensitiveDict()
-#     headers["Accept"] = "application/json"
-#     headers["Content-Type"] = "application/json"
-#     headers["Authorization"] = config["token"]
-#     requests.patch(url, headers=headers, json=data)
-
-# @bot.command()
-# async def clockon(ctx, *, text: str=None):
-#     await ctx.message.delete()
-#     if not text==None:
-#         clock.start(text)
-#     else:
-#         clock.start("")
-
-# @bot.command()
-# async def clockoff(ctx):
-#     await ctx.message.delete()
-#     clock.stop()
-#     url = "https://discordapp.com/api/v9/users/@me/settings"
-
-#     headers = CaseInsensitiveDict()
-#     headers["Accept"] = "application/json"
-#     headers["Content-Type"] = "application/json"
-#     headers["Authorization"] = config["token"]
-
-#     data = {
-#         "custom_status": NULL
-#     }
-
-#     requests.patch(url, headers=headers, json=data)
-
-
-
-# bot run #
     
-# bot.run(config["token"], bot=False)
+
 def Init():
     with open('config.json', encoding="utf-8") as f:
         config = json.load(f)
