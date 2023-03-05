@@ -1,0 +1,11 @@
+{
+    "token": "token", 
+    "prefix": ">", 
+    "rpc": true, 
+    "deletetime": 50000, 
+    "theme": {
+        "name": "put something here",
+        "title": "put something here", 
+        "text": "put something here"
+    } 
+}
