@@ -1,2 +1,4 @@
 # Cotra-Selfbot
-Discord Selfbot
+
+
+# THIS PROJECT IS DEPRECIATED
