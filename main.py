@@ -28,8 +28,6 @@ config = json.load(open('config.json', 'rb'))
 ########### >> Defining
 os.system("color")
 
-########### >> Variables
-
 ########### >> Classes
 class Colours:
     White = "\x1b[38;2;250;250;250m"
